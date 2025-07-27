@@ -1,9 +1,8 @@
 backend:
   name: git-gateway
   branch: main
-  identity_url: https://tokogadgetonline.netlify.app/.netlify/identity
 
-publish_mode: editorial_workflow
+local_backend: true
 
 media_folder: "static/img"
 public_folder: "/img"
@@ -15,5 +14,6 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Nama", name: "title", widget: "string" }
+      - { label: "Nama Produk", name: "title", widget: "string" }
       - { label: "Deskripsi", name: "body", widget: "markdown" }
+      - { label: "Gambar", name: "image", widget: "image" }
