@@ -8,11 +8,11 @@ public_folder: "/images"
 collections:
   - name: "produk"
     label: "Produk"
-    folder: "produk"
+    folder: "images"
     create: true
     slug: "{{slug}}"
     fields:
       - { label: "Nama Produk", name: "title", widget: "string" }
-      - { label: "Deskripsi", name: "body", widget: "markdown" }
-      - { label: "Harga", name: "harga", widget: "string" }
+      - { label: "Deskripsi", name: "description", widget: "text" }
       - { label: "Gambar", name: "image", widget: "image" }
+
